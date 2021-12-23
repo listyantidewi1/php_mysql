@@ -19,6 +19,7 @@
     if ($hasil->num_rows > 0) {
 
     ?>
+        <a href="form_input.php">Tambah Data</a>
         <table border="1">
             <tr>
                 <th>Nomor</th>
@@ -34,12 +35,12 @@
                 </tr>
         <?php
             }
-			echo "</table>";
+            echo "</table>";
         } else {
             echo "tidak ada data";
         }
 
-        
+
         $konek->close();
         ?>
 

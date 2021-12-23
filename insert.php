@@ -14,7 +14,7 @@
     if ($konek->query($query2) === TRUE) {
         echo "data berhasil ditambahkan";
     } else {
-        echo "Error: " . $sql . "<br>" . $konek->error;
+        echo "Error: " . $query2 . "<br>" . $konek->error;
     }
 
     $konek->close();
