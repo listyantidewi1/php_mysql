@@ -24,6 +24,7 @@
             <tr>
                 <th>Nomor</th>
                 <th>Nama Provinsi</th>
+                <th>Action</th>
             </tr>
 
             <?php
@@ -32,6 +33,11 @@
                 <tr>
                     <td><?php echo $baris["id"]; ?> </td>
                     <td><?php echo $baris["name"]; ?> </td>
+                    <td>
+                        <a href="edit.php?id=<?php echo $baris['id']; ?>"> Edit</a>
+                        <a href="delete.php?id=<?php echo $baris['id']; ?>"> Delete</a>
+                    </td>
+
                 </tr>
         <?php
             }
